@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-icon">
+            🏥
+        </div>
+
+        <h2>Healthcare Support Portal</h2>
+
+        <p>
+            AI-powered healthcare support and patient assistance system
+        </p>
+
+    </section>
+
+    <!-- Main Container -->
+
+    <div class="container">
+
+        <!-- Patient Registration -->
+
+        <div class="card">
+
+            <h3>Patient Registration</h3>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <form id="patientForm">
+
+                <input type="text" id="name" placeholder="Patient Name" required>
+
+                <input type="number" id="age" placeholder="Age" required>
+
+                <select id="gender">
+                    <option>Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+
+                <input type="tel" id="phone" placeholder="Mobile Number">
+
+                <input type="email" id="email" placeholder="Email">
+
+                <input type="text" id="bloodGroup" placeholder="Blood Group">
+
+                <textarea id="issue" rows="5" placeholder="Describe your health issue"></textarea>
+
+                <button type="submit">
+                    Submit Request
+                </button>
+
+            </form>
+
+            <div class="summary-box">
+
+                <h4>AI Health Summary</h4>
+
+                <p id="summary"></p>
+
+                <p id="department"></p>
+
+            </div>
+
+        </div>
+
+        <!-- FAQ Chatbot -->
+
+        <div class="card">
+
+            <h3>Healthcare FAQ Bot</h3>
+
+            <input type="text" id="question" placeholder="Ask a healthcare question">
+
+            <button onclick="chatbot()">
+                Ask Bot
+            </button>
+
+            <div class="chat-output">
+                <p id="answer"></p>
+            </div>
+
+        </div>
+
+        <!-- Volunteer Registration -->
+
+        <div class="card">
+
+            <h3>Volunteer Registration</h3>
+
+            <input type="text" id="volunteerName" placeholder="Volunteer Name">
+
+            <input type="email" id="volunteerEmail" placeholder="Email">
+
+            <input type="text" id="skills" placeholder="Skills">
+
+            <button onclick="registerVolunteer()">
+                Register
+            </button>
+
+            <p id="volunteerMsg"></p>
+
+        </div>
+
+        <!-- Health Tips -->
+
+        <div class="card">
+
+            <h3>Daily Health Tips</h3>
+
+            <button onclick="generateTip()">
+                Generate Tip
+            </button>
+
+            <div class="tip-box">
+
+                <p id="healthTip"></p>
+
+            </div>
+
+        </div>
+
+        <!-- Emergency Contacts -->
+
+        <div class="card">
+
+            <h3>Emergency Helplines</h3>
+
+            <div class="helpline">
+                <div>🚑 Ambulance : 108</div>
+                <div>👮 Police : 100</div>
+                <div>🔥 Fire : 101</div>
+                <div>🆘 Emergency : 112</div>
+            </div>
+
+        </div>
+
+        <!-- Records -->
+
+        <div class="card">
+
+            <h3>Patient History</h3>
+
+            <div id="records" class="records"></div>
+
+        </div>
+
+    </div>
+    <div id="toast" class="toast">
+        Success Message
+    </div>
+
+    <footer>
+
+        <p>
+            © 2026 HealthConnect | Healthcare Support Portal
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

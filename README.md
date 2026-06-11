@@ -21,12 +21,13 @@ A modern, responsive, and interactive **Healthcare Support Web Application** bui
 
 ## 📂 Project Structure
 
-HealthConnect/
-│
+```
+Health-Connect/
 │── index.html      → Main UI structure
-│── style.css       → Styling & animations
+│── style.css       → styling & animations
 │── script.js       → All functionality
 │── README.md       → Project documentation
+```
 
 ## ▶️ How to Run
 
